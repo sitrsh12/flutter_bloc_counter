@@ -7,12 +7,6 @@ class CounterState extends Equatable {
 
   @override
   List<Object> get props => [counter];
-
-  factory CounterState.fromMap(Map<String, dynamic> map) {
-    return CounterState(
-      counter: map["counter"].toInt() ?? 0,
-    );
-  }
 }
 
 class CounterInitial extends CounterState {

@@ -38,14 +38,14 @@ class _CounterPageState extends State<CounterPage> {
             children: [
               FloatingActionButton(
                 onPressed: () {
-                    counterBloc.add(CounterDecrementEvent());
+                    counterBloc.add(CounterIncrementEvent());
                 },
                 child: const Icon(Icons.add),
               ),
               const SizedBox(height: 16),
               FloatingActionButton(
                 onPressed: () {
-                  counterBloc.add(CounterIncrementEvent());
+                  counterBloc.add(CounterDecrementEvent());
                 },
                 child: const Icon(Icons.remove),
               ),
